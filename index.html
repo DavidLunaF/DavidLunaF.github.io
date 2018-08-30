@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>David Luna - Front End Developer</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
 </head>
-<body>
+<body class="is-preload">
     <div id="wrapper">
         <div id="bg"></div>
         <div id="overlay"></div>
@@ -15,14 +16,12 @@
             <!-- Header -->
                 <header id="header">
                     <h1> - David Luna - </h1>
-                    <p>Front End Developer &nbsp;&bull;&nbsp; Cerveza &nbsp;&bull;&nbsp; Perretes</p>
+                    <p>&bull;&nbsp; Front End Developer &nbsp;&bull;&nbsp;  </p>
                     <nav>
                         <ul>
-                            <!-- <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
                             <li><a target="_blank" href="https://www.linkedin.com/in/davidlunafernandez/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
                             <li><a target="_blank" href="https://github.com/davidlunaf" class="icon fa-github"><span class="label">Github</span></a></li>
-                            <li><a target="_blank" href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+                            <li><a target="_blank" href="mailto:david.luna.fernandez@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
                         </ul>
                     </nav>
                 </header>
@@ -34,5 +33,10 @@
 
         </div>
     </div>
+    <script>
+        window.onload = function() { document.body.classList.remove('is-preload'); }
+        window.ontouchmove = function() { return false; }
+        window.onorientationchange = function() { document.body.scrollTop = 0; }
+    </script>
 </body>
 </html>
