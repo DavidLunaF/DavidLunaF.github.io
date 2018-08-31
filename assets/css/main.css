@@ -143,8 +143,9 @@ a:hover {
     transform-origin: center;
     background: url("../images/bg-sea.jpeg");
     filter:brightness(0.8);
-    height: 100%;
-    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /************************* Main ****************************/
 
@@ -346,6 +347,10 @@ a:hover {
         font-size: 1.25em;
         margin: 0.75em 0 0.25em 0;
         opacity: 0.75;
+    }
+    
+    #header nav{
+        padding-left: 0px;
     }
 
         #header nav li {
